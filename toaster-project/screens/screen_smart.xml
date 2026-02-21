@@ -155,7 +155,6 @@
 					<style name="style_start_button" />
 					<style name="style_start_button_pressed" selector="pressed" />
 					<subject_set_int_event subject="start_pressed" value="1" />
-					<subject_set_int_event subject="start_pressed" value="0" trigger="released" />
 					<lv_label text="Start" align="center" style_text_color="0xffffff" style_text_font="geist_semibold_22" />
 				</lv_button>
 			</lv_obj>
