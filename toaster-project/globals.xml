@@ -1,0 +1,53 @@
+<globals>
+	<api>
+		<!-- Add <enumdefs> here -->
+	</api>
+
+	<consts>
+		<int name="unit_xs" value="4" />
+		<int name="unit_sm" value="8" />
+		<int name="unit_md" value="12" />
+		<int name="unit_lg" value="16" />
+		<int name="unit_xl" value="24" />
+
+		<color name="color_frame_bg" value="0xd9d8d7" />
+		<color name="color_sidebar_bg" value="0xededed" />
+		<color name="color_surface" value="0xf8f8f8" />
+		<color name="color_text_dark" value="0x444444" />
+		<color name="color_text_muted" value="0xa4a4a4" />
+		<color name="color_gold" value="0xe2a524" />
+		<color name="color_gold_light" value="0xefc063" />
+		<color name="color_gold_dark" value="0xbf8316" />
+		<color name="color_track" value="0xe5e5e5" />
+		<color name="color_slot_inactive" value="0xc8c8ca" />
+		<color name="color_soft_border" value="0xd7d7d7" />
+	</consts>
+
+	<styles>
+		<style name="style_reset" width="content" height="content" bg_opa="0" border_width="0" radius="0" pad_all="0" />
+	</styles>
+
+	<subjects>
+		<int name="slot_selected" value="0" min_value="0" max_value="1" help="0: Left slot, 1: Right slot" />
+		<int name="toast_level" value="45" min_value="0" max_value="100" help="Shared toasting level in Smart mode" />
+		<int name="start_pressed" value="0" help="Write-only click marker for Start button" />
+		<int name="manual_l_progress" value="100" min_value="0" max_value="100" />
+		<int name="manual_r_progress" value="100" min_value="0" max_value="100" />
+	</subjects>
+
+	<images>
+		<file name="icon_nav_smart" src_path="images/icon_nav_smart.png" />
+		<file name="icon_nav_manual" src_path="images/icon_nav_manual.png" />
+		<file name="icon_nav_settings" src_path="images/icon_nav_settings.png" />
+		<file name="icon_heart_bubble" src_path="images/icon_heart_bubble.png" />
+		<file name="icon_badge_heart" src_path="images/icon_badge_heart.png" />
+	</images>
+
+	<fonts>
+		<tiny_ttf name="geist_regular_14" size="14" as_file="true" src_path="fonts/Geist/Geist-Regular.ttf" />
+		<tiny_ttf name="geist_regular_16" size="16" as_file="true" src_path="fonts/Geist/Geist-Regular.ttf" />
+		<tiny_ttf name="geist_semibold_22" size="22" as_file="true" src_path="fonts/Geist/Geist-SemiBold.ttf" />
+		<tiny_ttf name="geist_semibold_28" size="28" as_file="true" src_path="fonts/Geist/Geist-SemiBold.ttf" />
+		<tiny_ttf name="geist_semibold_40" size="40" as_file="true" src_path="fonts/Geist/Geist-SemiBold.ttf" />
+	</fonts>
+</globals>

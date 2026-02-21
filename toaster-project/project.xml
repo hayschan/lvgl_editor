@@ -1,0 +1,7 @@
+<project name="toaster_ui">
+	<targets>
+		<target name="toaster_display">
+			<display width="480" height="320" />
+		</target>
+	</targets>
+</project>
