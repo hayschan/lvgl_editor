@@ -9256,6 +9256,12 @@ var _lvrt_health_check = Module["_lvrt_health_check"] = wasmExports["lvrt_health
 
 var _examples_init = Module["_examples_init"] = wasmExports["examples_init"];
 
+var _toaster_smoke_init = Module["_toaster_smoke_init"] = wasmExports["toaster_smoke_init"] || wasmExports["examples_init"];
+
+var _toaster_ui_init = Module["_toaster_ui_init"] = wasmExports["toaster_ui_init"] || wasmExports["examples_init"];
+
+var _toastersmoke_init = Module["_toastersmoke_init"] = wasmExports["toastersmoke_init"] || wasmExports["examples_init"];
+
 var _free = Module["_free"] = wasmExports["free"];
 
 var _fflush = wasmExports["fflush"];
