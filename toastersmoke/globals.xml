@@ -1,0 +1,17 @@
+<globals>
+	<api>
+		<!-- Add <enumdefs> here -->
+	</api>
+	<consts>
+		<color name="bg" value="0x101820" />
+		<color name="fg" value="0xffffff" />
+	</consts>
+	<styles>
+	</styles>
+	<subjects>
+	</subjects>
+	<images>
+	</images>
+	<fonts>
+	</fonts>
+</globals>

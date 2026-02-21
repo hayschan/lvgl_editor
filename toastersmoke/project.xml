@@ -1,0 +1,7 @@
+<project name="toaster_smoke">
+	<targets>
+		<target name="smoke_display">
+			<display width="320" height="240" />
+		</target>
+	</targets>
+</project>

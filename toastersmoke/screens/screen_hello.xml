@@ -1,0 +1,5 @@
+<screen>
+	<view style_bg_color="#bg">
+		<lv_label text="Smoke test" align="center" style_text_color="#fg" />
+	</view>
+</screen>
