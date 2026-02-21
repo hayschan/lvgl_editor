@@ -44,10 +44,6 @@
 	</images>
 
 	<fonts>
-		<tiny_ttf name="geist_regular_14" size="14" as_file="true" src_path="fonts/Geist/Geist-Regular.ttf" />
-		<tiny_ttf name="geist_regular_16" size="16" as_file="true" src_path="fonts/Geist/Geist-Regular.ttf" />
-		<tiny_ttf name="geist_semibold_22" size="22" as_file="true" src_path="fonts/Geist/Geist-SemiBold.ttf" />
-		<tiny_ttf name="geist_semibold_28" size="28" as_file="true" src_path="fonts/Geist/Geist-SemiBold.ttf" />
-		<tiny_ttf name="geist_semibold_40" size="40" as_file="true" src_path="fonts/Geist/Geist-SemiBold.ttf" />
+		<!-- Keep empty for compatibility; use default built-in font in screens -->
 	</fonts>
 </globals>

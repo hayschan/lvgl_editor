@@ -7,7 +7,7 @@
 			border_width="0"
 			pad_all="12"
 			shadow_color="0x707070"
-			shadow_opa="28%"
+			shadow_opa="71"
 			shadow_width="24"
 			shadow_offset_y="8"
 		/>
@@ -32,7 +32,7 @@
 			border_width="0"
 			pad_all="0"
 			shadow_color="0x808080"
-			shadow_opa="20%"
+			shadow_opa="51"
 			shadow_width="14"
 			shadow_offset_y="4"
 		/>
@@ -44,7 +44,7 @@
 			bg_color="#f1f1f1"
 			border_width="0"
 			shadow_color="0xb0b0b0"
-			shadow_opa="30%"
+			shadow_opa="77"
 			shadow_width="8"
 			shadow_offset_y="2"
 		/>
@@ -56,7 +56,7 @@
 			bg_color="#color_gold_dark"
 			border_width="0"
 			shadow_color="0x8a8a8a"
-			shadow_opa="32%"
+			shadow_opa="82"
 			shadow_width="12"
 			shadow_offset_y="5"
 		/>
@@ -68,7 +68,7 @@
 			bg_color="#color_gold_light"
 			border_width="0"
 			shadow_color="0x8a8a8a"
-			shadow_opa="32%"
+			shadow_opa="82"
 			shadow_width="12"
 			shadow_offset_y="5"
 		/>
@@ -86,24 +86,23 @@
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
-					<screen_create_event screen="screen_smart" anim_type="move_right" duration="300" />
-					<lv_image src="icon_nav_smart" align="top_mid" y="8" style_image_recolor="#color_text_muted" style_image_recolor_opa="255" />
-					<lv_label text="Smart" align="bottom_mid" y="-9" style_text_color="#color_text_muted" style_text_font="geist_regular_14" />
+					<lv_image src="icon_nav_smart" align="top_mid" y="8" />
+					<lv_label text="Smart" align="bottom_mid" y="-9" style_text_color="#color_text_muted" />
 				</lv_button>
 
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
 					<style name="style_nav_button_active" />
-					<lv_image src="icon_nav_manual" align="top_mid" y="8" style_image_recolor="#color_gold" style_image_recolor_opa="255" />
-					<lv_label text="Manual" align="bottom_mid" y="-9" style_text_color="#color_gold" style_text_font="geist_regular_14" />
+					<lv_image src="icon_nav_manual" align="top_mid" y="8" />
+					<lv_label text="Manual" align="bottom_mid" y="-9" style_text_color="#color_gold" />
 				</lv_button>
 
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
 					<lv_image src="icon_nav_settings" align="top_mid" y="8" />
-					<lv_label text="Settings" align="bottom_mid" y="-9" style_text_color="#color_text_muted" style_text_font="geist_regular_14" />
+					<lv_label text="Settings" align="bottom_mid" y="-9" style_text_color="#color_text_muted" />
 				</lv_button>
 			</lv_obj>
 
@@ -114,42 +113,28 @@
 				<lv_obj x="101" y="12">
 					<remove_style_all />
 					<style name="style_completed_pill" />
-					<lv_label text="Completed" align="center" style_text_color="#color_text_dark" style_text_font="geist_regular_16" />
+					<lv_label text="Completed" align="center" style_text_color="#color_text_dark" />
 				</lv_obj>
 
 				<lv_obj x="39" y="74" width="296" height="182">
 					<remove_style_all />
 					<style name="style_reset" />
 
-					<lv_obj x="0" y="0">
-						<remove_style_all />
-						<style name="style_progress_card_l" />
-						<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
-						<lv_label text="Toasting" align="top_mid" y="62" style_text_color="0xffffff" style_text_font="geist_regular_16" />
-						<lv_label
-							bind_text="manual_l_progress"
-							bind_text-fmt="%d%%"
-							align="top_mid"
-							y="85"
-							style_text_color="0xffffff"
-							style_text_font="geist_semibold_40"
-						/>
-					</lv_obj>
+						<lv_obj x="0" y="0">
+							<remove_style_all />
+							<style name="style_progress_card_l" />
+							<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
+							<lv_label text="Toasting" align="top_mid" y="62" style_text_color="0xffffff" />
+							<lv_label text="100%" align="top_mid" y="85" style_text_color="0xffffff" />
+						</lv_obj>
 
-					<lv_obj x="150" y="0">
-						<remove_style_all />
-						<style name="style_progress_card_r" />
-						<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
-						<lv_label text="Toasting" align="top_mid" y="62" style_text_color="0xffffff" style_text_font="geist_regular_16" />
-						<lv_label
-							bind_text="manual_r_progress"
-							bind_text-fmt="%d%%"
-							align="top_mid"
-							y="85"
-							style_text_color="0xffffff"
-							style_text_font="geist_semibold_40"
-						/>
-					</lv_obj>
+						<lv_obj x="150" y="0">
+							<remove_style_all />
+							<style name="style_progress_card_r" />
+							<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
+							<lv_label text="Toasting" align="top_mid" y="62" style_text_color="0xffffff" />
+							<lv_label text="100%" align="top_mid" y="85" style_text_color="0xffffff" />
+						</lv_obj>
 				</lv_obj>
 			</lv_obj>
 		</lv_obj>

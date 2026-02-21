@@ -7,7 +7,7 @@
 			border_width="0"
 			pad_all="12"
 			shadow_color="0x707070"
-			shadow_opa="28%"
+			shadow_opa="71"
 			shadow_width="24"
 			shadow_offset_y="8"
 		/>
@@ -32,7 +32,7 @@
 			border_width="0"
 			pad_all="0"
 			shadow_color="0x808080"
-			shadow_opa="20%"
+			shadow_opa="51"
 			shadow_width="14"
 			shadow_offset_y="4"
 		/>
@@ -43,7 +43,7 @@
 			radius="22"
 			border_width="0"
 			shadow_color="0x777777"
-			shadow_opa="35%"
+			shadow_opa="89"
 			shadow_width="10"
 			shadow_offset_y="3"
 		/>
@@ -58,7 +58,7 @@
 			border_width="2"
 			border_color="#color_soft_border"
 			shadow_color="0x8d8d8d"
-			shadow_opa="34%"
+			shadow_opa="87"
 			shadow_width="8"
 			shadow_offset_y="2"
 		/>
@@ -81,22 +81,21 @@
 					<style name="style_nav_button_base" />
 					<style name="style_nav_button_active" />
 					<lv_image src="icon_nav_smart" align="top_mid" y="8" />
-					<lv_label text="Smart" align="bottom_mid" y="-9" style_text_color="#color_gold" style_text_font="geist_regular_14" />
+					<lv_label text="Smart" align="bottom_mid" y="-9" style_text_color="#color_gold" />
 				</lv_button>
 
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
-					<screen_create_event screen="screen_manual" anim_type="move_left" duration="300" />
 					<lv_image src="icon_nav_manual" align="top_mid" y="8" />
-					<lv_label text="Manual" align="bottom_mid" y="-9" style_text_color="#color_text_muted" style_text_font="geist_regular_14" />
+					<lv_label text="Manual" align="bottom_mid" y="-9" style_text_color="#color_text_muted" />
 				</lv_button>
 
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
 					<lv_image src="icon_nav_settings" align="top_mid" y="8" />
-					<lv_label text="Settings" align="bottom_mid" y="-9" style_text_color="#color_text_muted" style_text_font="geist_regular_14" />
+					<lv_label text="Settings" align="bottom_mid" y="-9" style_text_color="#color_text_muted" />
 				</lv_button>
 			</lv_obj>
 
@@ -111,21 +110,17 @@
 					<lv_button x="4" y="-18" width="158" height="64">
 						<remove_style_all />
 						<style name="style_slot_active" />
-						<bind_style subject="slot_selected" ref_value="1" name="style_slot_inactive" />
-						<subject_set_int_event subject="slot_selected" value="0" />
-						<lv_label text="L" align="center" style_text_color="0xffffff" style_text_font="geist_semibold_28" />
+						<lv_label text="L" align="center" style_text_color="0xffffff" />
 					</lv_button>
 
 					<lv_button x="164" y="-18" width="158" height="64">
 						<remove_style_all />
 						<style name="style_slot_inactive" />
-						<bind_style subject="slot_selected" ref_value="1" name="style_slot_active" />
-						<subject_set_int_event subject="slot_selected" value="1" />
-						<lv_label text="R" align="center" style_text_color="0xffffff" style_text_font="geist_semibold_28" />
+						<lv_label text="R" align="center" style_text_color="0xffffff" />
 					</lv_button>
 				</lv_obj>
 
-				<lv_slider x="42" y="128" width="290" height="18" bind_value="toast_level" min_value="0" max_value="100">
+				<lv_slider x="42" y="128" width="290" height="18" value="45" min_value="0" max_value="100">
 					<style name="style_slider_main" />
 					<style name="style_slider_indicator" selector="indicator" />
 					<style name="style_slider_knob" selector="knob" />
@@ -134,14 +129,7 @@
 				<lv_obj x="186" y="112" width="34" height="34">
 					<remove_style_all />
 					<style name="style_slider_knob" />
-					<lv_label text="L" align="center" style_text_color="#color_gold_dark" style_text_font="geist_regular_16" />
-					<bind_flag_if_eq subject="slot_selected" ref_value="1" flag="hidden" />
-				</lv_obj>
-				<lv_obj x="186" y="112" width="34" height="34">
-					<remove_style_all />
-					<style name="style_slider_knob" />
-					<lv_label text="R" align="center" style_text_color="#color_gold_dark" style_text_font="geist_regular_16" />
-					<bind_flag_if_eq subject="slot_selected" ref_value="0" flag="hidden" />
+					<lv_label text="L" align="center" style_text_color="#color_gold_dark" />
 				</lv_obj>
 
 				<lv_button x="24" y="188">
@@ -154,8 +142,7 @@
 					<remove_style_all />
 					<style name="style_start_button" />
 					<style name="style_start_button_pressed" selector="pressed" />
-					<subject_set_int_event subject="start_pressed" value="1" />
-					<lv_label text="Start" align="center" style_text_color="0xffffff" style_text_font="geist_semibold_22" />
+					<lv_label text="Start" align="center" style_text_color="0xffffff" />
 				</lv_button>
 			</lv_obj>
 		</lv_obj>
