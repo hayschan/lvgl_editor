@@ -10,17 +10,22 @@
 		<int name="unit_lg" value="16" />
 		<int name="unit_xl" value="24" />
 
-		<color name="color_frame_bg" value="0xd9d8d7" />
-		<color name="color_sidebar_bg" value="0xededed" />
-		<color name="color_surface" value="0xf8f8f8" />
-		<color name="color_text_dark" value="0x444444" />
-		<color name="color_text_muted" value="0xa4a4a4" />
-		<color name="color_gold" value="0xe2a524" />
-		<color name="color_gold_light" value="0xefc063" />
-		<color name="color_gold_dark" value="0xbf8316" />
-		<color name="color_track" value="0xe5e5e5" />
-		<color name="color_slot_inactive" value="0xc8c8ca" />
-		<color name="color_soft_border" value="0xd7d7d7" />
+		<color name="color_frame_bg" value="0xd7d6d5" />
+		<color name="color_shell_bg" value="0xf5f5f5" />
+		<color name="color_sidebar_bg" value="0xebebeb" />
+		<color name="color_surface" value="0xffffff" />
+		<color name="color_panel" value="0xf2f2f2" />
+		<color name="color_track" value="0xe6e6e6" />
+
+		<color name="color_text_main" value="0x545454" />
+		<color name="color_text_muted" value="0xaaaaaa" />
+		<color name="color_white" value="0xffffff" />
+
+		<color name="color_gold" value="0xe0a321" />
+		<color name="color_gold_dark" value="0xc38716" />
+		<color name="color_gold_light" value="0xe9be5e" />
+		<color name="color_slot_inactive" value="0xc9c9cb" />
+		<color name="color_soft_border" value="0xd8d8d8" />
 	</consts>
 
 	<styles>

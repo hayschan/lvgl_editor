@@ -2,15 +2,16 @@
 	<styles>
 		<style
 			name="style_main_shell"
-			bg_color="#color_surface"
+			bg_color="#color_shell_bg"
 			radius="18"
 			border_width="0"
 			pad_all="12"
 			shadow_color="0x707070"
-			shadow_opa="71"
+			shadow_opa="72"
 			shadow_width="24"
 			shadow_offset_y="8"
 		/>
+
 		<style
 			name="style_sidebar"
 			bg_color="#color_sidebar_bg"
@@ -23,54 +24,64 @@
 		/>
 
 		<style name="style_nav_button_base" width="56" height="86" radius="11" bg_opa="0" border_width="0" pad_all="0" />
-		<style name="style_nav_button_active" bg_opa="100%" bg_color="#color_surface" />
+		<style name="style_nav_button_active" bg_opa="100" bg_color="#color_surface" />
 
 		<style
 			name="style_content_card"
 			bg_color="#color_surface"
-			radius="26"
+			radius="24"
 			border_width="0"
 			pad_all="0"
-			shadow_color="0x808080"
-			shadow_opa="51"
+			shadow_color="0x858585"
+			shadow_opa="52"
 			shadow_width="14"
 			shadow_offset_y="4"
 		/>
+
 		<style
 			name="style_completed_pill"
 			width="172"
-			height="42"
-			radius="21"
-			bg_color="#f1f1f1"
+			height="40"
+			radius="20"
+			bg_color="0xf1f1f1"
 			border_width="0"
 			shadow_color="0xb0b0b0"
-			shadow_opa="77"
+			shadow_opa="76"
 			shadow_width="8"
 			shadow_offset_y="2"
 		/>
+
+		<style
+			name="style_progress_stage"
+			bg_color="#color_panel"
+			radius="58"
+			border_width="0"
+			pad_all="0"
+		/>
+
 		<style
 			name="style_progress_card_l"
-			width="146"
-			height="170"
+			width="116"
+			height="144"
 			radius="34"
 			bg_color="#color_gold_dark"
 			border_width="0"
 			shadow_color="0x8a8a8a"
-			shadow_opa="82"
-			shadow_width="12"
-			shadow_offset_y="5"
+			shadow_opa="80"
+			shadow_width="11"
+			shadow_offset_y="4"
 		/>
 		<style
 			name="style_progress_card_r"
-			width="146"
-			height="170"
+			width="116"
+			height="144"
 			radius="34"
 			bg_color="#color_gold_light"
 			border_width="0"
 			shadow_color="0x8a8a8a"
-			shadow_opa="82"
-			shadow_width="12"
-			shadow_offset_y="5"
+			shadow_opa="80"
+			shadow_width="11"
+			shadow_offset_y="4"
 		/>
 	</styles>
 
@@ -113,28 +124,28 @@
 				<lv_obj x="101" y="12">
 					<remove_style_all />
 					<style name="style_completed_pill" />
-					<lv_label text="Completed" align="center" style_text_color="#color_text_dark" />
+					<lv_label text="Completed" align="center" style_text_color="#color_text_main" />
 				</lv_obj>
 
-				<lv_obj x="39" y="74" width="296" height="182">
+				<lv_obj x="24" y="60" width="326" height="204">
 					<remove_style_all />
-					<style name="style_reset" />
+					<style name="style_progress_stage" />
 
-						<lv_obj x="0" y="0">
-							<remove_style_all />
-							<style name="style_progress_card_l" />
-							<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
-							<lv_label text="Toasting" align="top_mid" y="62" style_text_color="0xffffff" />
-							<lv_label text="100%" align="top_mid" y="85" style_text_color="0xffffff" />
-						</lv_obj>
+					<lv_obj x="42" y="42">
+						<remove_style_all />
+						<style name="style_progress_card_l" />
+						<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
+						<lv_label text="Toasting" align="top_mid" y="58" style_text_color="#color_white" />
+						<lv_label text="100%" align="top_mid" y="82" style_text_color="#color_white" />
+					</lv_obj>
 
-						<lv_obj x="150" y="0">
-							<remove_style_all />
-							<style name="style_progress_card_r" />
-							<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
-							<lv_label text="Toasting" align="top_mid" y="62" style_text_color="0xffffff" />
-							<lv_label text="100%" align="top_mid" y="85" style_text_color="0xffffff" />
-						</lv_obj>
+					<lv_obj x="170" y="42">
+						<remove_style_all />
+						<style name="style_progress_card_r" />
+						<lv_image src="icon_badge_heart" align="top_right" x="10" y="-10" />
+						<lv_label text="Toasting" align="top_mid" y="58" style_text_color="#color_white" />
+						<lv_label text="100%" align="top_mid" y="82" style_text_color="#color_white" />
+					</lv_obj>
 				</lv_obj>
 			</lv_obj>
 		</lv_obj>
