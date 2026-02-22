@@ -1,111 +1,82 @@
-<screen>
+<screen permanent="true">
 	<styles>
 		<style
 			name="style_main_shell"
 			bg_color="#color_shell_bg"
-			radius="18"
+			radius="14"
 			border_width="0"
-			pad_all="12"
+			pad_all="8"
 			shadow_color="0x707070"
-			shadow_opa="72"
-			shadow_width="24"
-			shadow_offset_y="8"
+			shadow_opa="70"
+			shadow_width="16"
+			shadow_offset_y="5"
 		/>
 
 		<style
 			name="style_sidebar"
 			bg_color="#color_sidebar_bg"
-			radius="12"
+			radius="10"
 			border_width="0"
-			pad_all="6"
+			pad_all="4"
 			layout="flex"
 			flex_flow="column"
 			flex_main_place="space_between"
 		/>
 
-		<style name="style_nav_button_base" width="56" height="86" radius="11" bg_opa="0" border_width="0" pad_all="0" />
+		<style name="style_nav_button_base" width="44" height="66" radius="9" bg_opa="0" border_width="0" pad_all="0" />
 		<style name="style_nav_button_active" bg_opa="100" bg_color="#color_surface" />
 
 		<style
 			name="style_content_card"
 			bg_color="#color_surface"
-			radius="24"
+			radius="18"
 			border_width="0"
 			pad_all="0"
-			shadow_color="0x858585"
-			shadow_opa="52"
-			shadow_width="14"
-			shadow_offset_y="4"
+			shadow_color="0x888888"
+			shadow_opa="46"
+			shadow_width="9"
+			shadow_offset_y="3"
 		/>
 
-		<style
-			name="style_slot_plate"
-			bg_color="#color_panel"
-			radius="32"
-			border_width="0"
-			pad_all="0"
-		/>
-		<style name="style_slot_track" bg_color="#color_track" radius="20" border_width="0" />
+		<style name="style_slot_plate" bg_color="#color_panel" radius="24" border_width="0" pad_all="0" />
+		<style name="style_slot_track" bg_color="#color_track" radius="14" border_width="0" />
 		<style
 			name="style_slot_active"
 			bg_color="#color_gold"
-			radius="22"
+			radius="18"
 			border_width="0"
 			shadow_color="0x777777"
-			shadow_opa="90"
-			shadow_width="10"
-			shadow_offset_y="3"
+			shadow_opa="80"
+			shadow_width="7"
+			shadow_offset_y="2"
 		/>
-		<style name="style_slot_inactive" bg_color="#color_slot_inactive" radius="22" border_width="0" />
+		<style name="style_slot_inactive" bg_color="#color_slot_inactive" radius="16" border_width="0" />
 
-		<style
-			name="style_slider_main"
-			bg_color="#color_track"
-			radius="11"
-			border_width="0"
-		/>
-		<style
-			name="style_slider_indicator"
-			bg_color="#color_gold_light"
-			radius="11"
-		/>
+		<style name="style_slider_main" bg_color="#color_track" radius="9" border_width="0" />
+		<style name="style_slider_indicator" bg_color="#color_gold_light" radius="9" />
 		<style
 			name="style_slider_knob"
 			bg_color="#color_surface"
-			radius="14"
+			radius="12"
 			border_width="2"
 			border_color="#color_soft_border"
 			shadow_color="0x8d8d8d"
-			shadow_opa="86"
-			shadow_width="8"
+			shadow_opa="82"
+			shadow_width="6"
 			shadow_offset_y="2"
 		/>
 
-		<style
-			name="style_favorite_button"
-			width="56"
-			height="44"
-			radius="12"
-			bg_color="#color_surface"
-			border_width="0"
-		/>
-		<style
-			name="style_start_button"
-			width="248"
-			height="58"
-			radius="29"
-			bg_color="#color_gold"
-			border_width="0"
-		/>
+		<style name="style_favorite_button" width="42" height="34" radius="10" bg_color="#color_surface" border_width="0" />
+		<style name="style_start_button" width="154" height="42" radius="21" bg_color="#color_gold" border_width="0" />
 		<style name="style_start_button_pressed" bg_color="#color_gold_dark" />
 	</styles>
 
-	<view style_bg_color="#color_frame_bg" style_pad_all="10">
-		<lv_obj width="100%" height="100%">
+	<view style_bg_color="#color_frame_bg" style_pad_all="8">
+		<lv_obj x="0" y="0" width="304" height="224">
 			<remove_style_all />
 			<style name="style_main_shell" />
 
-			<lv_obj x="0" y="0" width="68" height="100%">
+			<lv_obj x="0" y="0" width="52" height="208">
 				<remove_style_all />
 				<style name="style_sidebar" />
 
@@ -113,70 +84,71 @@
 					<remove_style_all />
 					<style name="style_nav_button_base" />
 					<style name="style_nav_button_active" />
-					<lv_image src="icon_nav_smart" align="top_mid" y="8" />
-					<lv_label text="Smart" align="bottom_mid" y="-9" style_text_color="#color_gold" />
+					<lv_image src="icon_nav_smart" align="top_mid" y="4" zoom="190" />
+					<lv_label text="Smart" align="bottom_mid" y="-6" style_text_color="#color_gold" />
 				</lv_button>
 
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
-					<lv_image src="icon_nav_manual" align="top_mid" y="8" />
-					<lv_label text="Manual" align="bottom_mid" y="-9" style_text_color="#color_text_muted" />
+					<lv_image src="icon_nav_manual" align="top_mid" y="4" zoom="190" />
+					<lv_label text="Manual" align="bottom_mid" y="-6" style_text_color="#color_text_muted" />
+					<screen_load_event screen="screen_manual" anim_type="none" duration="0" />
 				</lv_button>
 
 				<lv_button>
 					<remove_style_all />
 					<style name="style_nav_button_base" />
-					<lv_image src="icon_nav_settings" align="top_mid" y="8" />
-					<lv_label text="Settings" align="bottom_mid" y="-9" style_text_color="#color_text_muted" />
+					<lv_image src="icon_nav_settings" align="top_mid" y="4" zoom="190" />
+					<lv_label text="Settings" align="bottom_mid" y="-6" style_text_color="#color_text_muted" />
 				</lv_button>
 			</lv_obj>
 
-			<lv_obj x="82" y="10" width="374" height="278">
+			<lv_obj x="64" y="8" width="232" height="200">
 				<remove_style_all />
 				<style name="style_content_card" />
 
-				<lv_obj x="24" y="16" width="326" height="96">
+				<lv_obj x="14" y="10" width="204" height="70">
 					<remove_style_all />
 					<style name="style_slot_plate" />
 
-					<lv_obj x="8" y="24" width="310" height="22">
+					<lv_obj x="8" y="22" width="188" height="18">
 						<remove_style_all />
 						<style name="style_slot_track" />
 					</lv_obj>
 
-					<lv_button x="6" y="-4" width="150" height="62">
+					<lv_button x="6" y="-2" width="92" height="46">
 						<remove_style_all />
 						<style name="style_slot_active" />
 						<lv_label text="L" align="center" style_text_color="#color_white" />
 					</lv_button>
 
-					<lv_button x="170" y="2" width="146" height="56">
+					<lv_button x="104" y="2" width="92" height="42">
 						<remove_style_all />
 						<style name="style_slot_inactive" />
 						<lv_label text="R" align="center" style_text_color="#color_white" />
 					</lv_button>
 				</lv_obj>
 
-				<lv_slider x="40" y="128" width="292" height="20" value="45" min_value="0" max_value="100">
+				<lv_slider x="24" y="92" width="182" height="14" value="45" min_value="0" max_value="100">
 					<style name="style_slider_main" />
 					<style name="style_slider_indicator" selector="indicator" />
 					<style name="style_slider_knob" selector="knob" />
 				</lv_slider>
 
-				<lv_obj x="182" y="121" width="34" height="34">
+				<lv_obj x="106" y="84" width="26" height="26">
 					<remove_style_all />
 					<style name="style_slider_knob" />
 					<lv_label text="L" align="center" style_text_color="#color_gold_dark" />
 				</lv_obj>
 
-				<lv_button x="24" y="190">
+				<lv_button x="14" y="148">
 					<remove_style_all />
 					<style name="style_favorite_button" />
-					<lv_image src="icon_heart_bubble" align="center" />
+					<lv_image src="icon_heart_bubble" align="center" zoom="175" />
 				</lv_button>
 
-				<lv_button x="92" y="182">
+				<lv_button x="64" y="142">
 					<remove_style_all />
 					<style name="style_start_button" />
 					<style name="style_start_button_pressed" selector="pressed" />
